@@ -948,7 +948,6 @@ a{text-decoration:none;color:inherit}
     <div class="nav-links">
       <a href="#plataforma">Cómo funciona</a>
       <a href="#resultados">Resultados</a>
-      <a href="#clientes">Clientes</a>
       <a href="#contacto">Contacto</a>
     </div>
     <div style="display:flex;align-items:center;gap:12px">
@@ -1019,7 +1018,6 @@ a{text-decoration:none;color:inherit}
     <div class="label">Ya confían en Proppio</div>
     <div class="trust-logos">
       <img src="img/9da3f192-d1a5-4a46-a664-4ce2b6f3bd21.png" alt="GFA Real Estate">
-      <span class="logo-crop"><img src="img/lg-houses.png" alt="LG Houses"></span>
     </div>
   </section>
 
@@ -1096,38 +1094,6 @@ a{text-decoration:none;color:inherit}
       </div>
     </div>
   </section>
-
-  <!-- CLIENTES / CASOS -->
-  <section class="cases" id="clientes" data-screen-label="Clientes">
-    <div class="head">
-      <div class="eyebrow"><span class="dot"></span> Clientes</div>
-      <h2>Agencias reales, con cada oportunidad <em>atendida y agendada.</em></h2>
-    </div>
-
-    <div class="cases-grid">
-      <article class="case">
-        <div class="logo"><img src="img/9da3f192-d1a5-4a46-a664-4ce2b6f3bd21.png" alt="GFA Real Estate"></div>
-        <blockquote>"Antes se nos escapaban las llamadas del fin de semana. Ahora el lunes llegamos y las visitas <em>ya están en el calendario</em>."</blockquote>
-        <div class="who"><b>José Enrique Navarro</b>Director Comercial · GFA Real Estate</div>
-        <div class="kpis">
-          <div class="kpi"><div class="n">0</div><div class="l">llamadas perdidas desde la activación</div></div>
-          <div class="kpi"><div class="n">+38%</div><div class="l">visitas agendadas por mes</div></div>
-        </div>
-      </article>
-
-      <article class="case">
-        <div class="logo"><span class="logo-crop"><img src="img/lg-houses.png" alt="LG Houses"></span></div>
-        <blockquote>"Proppio cualifica al cliente antes de que nosotros descolguemos. Solo hablamos con gente que <em>de verdad quiere visitar</em>."</blockquote>
-        <div class="who"><b>Mercè Fernández</b>Fundadora · LG Houses</div>
-        <div class="kpis">
-          <div class="kpi"><div class="n">9/10</div><div class="l">leads cualificados sin intervención del equipo</div></div>
-          <div class="kpi"><div class="n">3 h</div><div class="l">ahorradas al día en atención telefónica</div></div>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <hr style="border:0;border-top:1px solid var(--line);margin:0">
 
   <!-- WHY VOICE -->
   <section class="why" id="como" data-screen-label="Por qué funciona">
@@ -1263,12 +1229,9 @@ a{text-decoration:none;color:inherit}
       <span class="bl">Todos tus canales</span>
       <div class="int-tiles">
         <span class="int-tile"><span class="ico" style="background:#baff3b;color:#0b3b00">Id</span>Idealista</span>
-        <span class="int-tile"><span class="ico d">Fc</span>Fotocasa</span>
         <span class="int-tile"><span class="ico b">Wa</span>WhatsApp</span>
         <span class="int-tile"><span class="ico c">GC</span>Google Calendar</span>
         <span class="int-tile"><span class="ico e">Iv</span>Inmovilla</span>
-        <span class="int-tile"><span class="ico f">Wi</span>Witei</span>
-        <span class="int-tile"><span class="ico a">☎</span>Centralita</span>
       </div>
     </div>
   </section>
@@ -1310,7 +1273,7 @@ a{text-decoration:none;color:inherit}
       </ul>
     </div>
 
-    <form class="demo-card" onsubmit="event.preventDefault();this.querySelector('button').innerText='¡Hecho! Te escribimos hoy mismo →'">
+    <form class="demo-card" onsubmit="event.preventDefault();var v=[].map.call(this.querySelectorAll('input'),function(i){return (i.previousElementSibling?i.previousElementSibling.textContent:'')+': '+i.value}).join('\n');window.location.href='mailto:hi@proppio.ai?subject='+encodeURIComponent('Solicitud de demo Proppio')+'&body='+encodeURIComponent('Hola, me gustaría reservar una demo.\n\n'+v);this.querySelector('button').innerText='Abriendo tu correo… →'">
       <div class="demo-head"><span>Demo · 20 min</span><span class="st">Agenda abierta</span></div>
       <h3 class="demo-ttl">Reserva tu demo</h3>
       <p class="demo-subttl">Sin compromiso. Respondemos personalmente a cada agencia, normalmente el mismo día.</p>
@@ -1339,13 +1302,7 @@ a{text-decoration:none;color:inherit}
     <div class="contact-card">
       <div class="cc-label">· Canal directo</div>
 
-      <div class="contact-row">
-        <div class="ic">☎</div>
-        <div class="info">
-          <span class="k">Teléfono</span>
-          <span class="v mono"><a href="tel:+34691351819">+34 691 351 819</a></span>
-        </div>
-      </div>
+      
 
       <div class="contact-row">
         <div class="ic">✉</div>
